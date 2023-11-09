@@ -40,7 +40,7 @@ Reducing SO(3) Convolutions to SO(2) for Efficient Equivariant GNNs
 对于本文，我们只对于SO(3)群感兴趣，即三维的空间旋转群。实际上，3D旋转群与描述量子作用的物理定律有着非常密切的联系。当我们旋转一个原子分子系统，系统的能量不应该发生变化，即SO(3)不变性，而原子的受力则应该发生相应的旋转，即SO(3)等变性。三维空间里面等变性是显而易见的，但是使用原子embedding的等变模型所在的空间则在非常高的维度中。在等变模型中，不可约表示对应实球谐函数的系数。给定系数$\bold{x}$, 定义一个球函数$F_{\bold{x}}: S^2 \rightarrow \mathbb{R}$:
 
 $$
-F_{\bold{x}}(\hat{\bold{r}}) = \sum_{l,m} \bold{x}_m^{(l)} \bold{Y}_m^{(l)}(\hat{\bold{r}})  \tag{1}
+F\_{\bold{x}}(\hat{\bold{r}}) = \sum_{l,m} \bold{x}\_m^{(l)} \bold{Y}\_m^{(l)}(\hat{\bold{r}})  \tag{1}
 $$
 
 其中，$\hat{r} = \bold{r} / |\bold{r}|$是单位矢量，表示方向， $\bold{Y}_m^{(l)}$ 是实球谐基函数，其中$l\in [0, L], m\in [-l, l]$。球谐函数有一个特殊的性质：对于3D旋转$\bold{R}$, 存在一个维度为$(2l+1)\times(2l+1)$的Wigner D-matrix $D^{(l)}(\bold{R})$满足下面关系:
